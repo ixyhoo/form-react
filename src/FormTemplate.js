@@ -36,8 +36,16 @@ const FormTemplate = () => {
  
 };
   return (
-    <div>
-      
+    <div className="form-container">
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name='name' required autoComplete='off' />
+        <label >Email</label>
+        <input type="email" name='email' required autoComplete='off' />
+        <label> Message</label>
+        <textarea name="message" required />
+        <input type="submit" value="Envoyer" />
+        <div className="form-message"></div>
     </div>
   );
 };
