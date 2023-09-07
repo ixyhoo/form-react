@@ -6,14 +6,14 @@ const FormTemplate = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const formMess = document.querySelector(".from-message");
+    const formMess = document.querySelector(".form-message");
 
   emailjs 
     .sendForm(
       "service_amqqf1x",
       "template_534e5uk",
       form.current,
-      process.env.REACT_APP_ID
+      "cdNh0lwy4ovTL_4GlCd7Z"
       )
       .then(
         (result) => {
