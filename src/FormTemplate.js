@@ -10,8 +10,8 @@ const FormTemplate = () => {
 
   emailjs 
     .sendForm(
-      "service_y4q20km",
-      "template_5ni7fmu",
+      "service_amqqf1x",
+      "template_534e5uk",
       form.current,
       process.env.REACT_APP_ID
       )
@@ -46,6 +46,7 @@ const FormTemplate = () => {
         <textarea name="message" required />
         <input type="submit" value="Envoyer" />
         <div className="form-message"></div>
+        </form>
     </div>
   );
 };
